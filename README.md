@@ -3,6 +3,8 @@
 **Author:** Tommy Trakoolthai
 **Course:** CS 563 — Intro to Web Development
 **Project:** Final Project
+**Deployed Site:** https://github.com/ttrakoolthai/web-dev-final-project
+**GitHub Repository:** https://ttrakoolthai.github.io/web-dev-final-project/index.html
 
 ---
 

@@ -1,40 +1,36 @@
-# macOS system files
+# Personal Portfolio Website
 
-.DS*Store
-.AppleDouble
-Icon?
-.*\*
+**Author:** Tommy Trakoolthai
+**Course:** CS 563 — Intro to Web Development
+**Project:** Final Project
 
-# VS Code settings
+---
 
-.vscode/
+## Project Description
 
-# Logs
+This project is a multi-page personal portfolio website created for the final project in CS 563 Intro to Web Development. It showcases:
 
-\*.log
+-   A professional **About** page
+-   A detailed **Experience** page with education, teaching history, and publications
+-   A **Projects** page with descriptions of selected academic and computational projects
+-   A **Contact** page with a working contact form along with my email, GitHub, and LinkedIn links
 
-# Node modules (if added later)
+This project uses the following technologies:
 
-node_modules/
+-   **HTML5**
+-   **CSS3 + Bootstrap 5**
+-   **JavaScript (ES6)**
 
-# Temporary files
+The site is fully responsive, uses semantic HTML, and includes custom CSS styling.
 
-_.tmp
-_.swp
-_.swo
-_.bak
+---
 
-# Build folders (not used now, safe to ignore)
+## How to Run the Code
 
-dist/
-build/
+### Download or clone the repository:
 
-# Python virtual environments (in case VSCode creates one)
+    ```bash
+    git clone https://github.com/ttrakoolthai/ttrakoolthai.github.io
+    ```
 
-venv/
-.env/
-
-# Caches
-
-**pycache**/
-.cache/
+### Use Live Server (VS Code Extension)

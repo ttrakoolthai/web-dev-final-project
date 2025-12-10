@@ -1,16 +1,28 @@
 /* ------------------------------
-   Typography & Layout
+   Global Typography & Layout
 ------------------------------ */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, sans-serif;
     line-height: 1.6;
-    color: #e6e6e6;
-    background-color: #121212;
+    color: #d8dee9;
+    background-color: #1b1f2b;
+    margin: 0;
 }
 
 main {
-    min-height: 70vh; /* ensures footer stays at bottom */
+    min-height: 70vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Main content panel (all pages use main > .container) */
+main > .container {
+    background-color: #2e3440;
+    border-radius: 12px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Headings */
@@ -19,29 +31,41 @@ h2,
 h3,
 h4 {
     font-weight: 600;
-    color: #ffffff;
+    color: #e5e9f0;
 }
 
-/* Mute text on dark background */
+/* Muted text */
 .text-muted {
-    color: #a0a0a0 !important;
+    color: #81a1c1 !important;
 }
 
 /* ------------------------------
    Navbar
 ------------------------------ */
+.navbar-dark.bg-dark {
+    background-color: #151821 !important;
+    border-bottom: 1px solid #2e3440;
+}
+
 .navbar-brand {
     font-weight: 600;
     letter-spacing: 0.5px;
+    color: #eceff4 !important;
 }
 
 .nav-link {
     margin-left: 0.5rem;
+    color: #d8dee9 !important;
+}
+
+.nav-link:hover {
+    color: #eceff4 !important;
 }
 
 .nav-link.active {
     font-weight: 600;
-    border-bottom: 2px solid #fff;
+    color: #eceff4 !important;
+    border-bottom: 2px solid #88c0d0;
 }
 
 /* ------------------------------
@@ -50,31 +74,33 @@ h4 {
 .profile-photo {
     max-width: 220px;
     border-radius: 50%;
-    border: 4px solid #444;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border: 4px solid #4c566a;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
 }
 
 /* ------------------------------
    Buttons
 ------------------------------ */
 .btn-primary {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #5e81ac;
+    border-color: #5e81ac;
+    color: #eceff4;
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0b5ed7;
+    background-color: #81a1c1;
+    border-color: #81a1c1;
+    color: #2e3440;
 }
 
 .btn-outline-secondary {
-    border-color: #cccccc;
-    color: #f1f1f1;
+    border-color: #d8dee9;
+    color: #d8dee9;
 }
 
 .btn-outline-secondary:hover {
-    background-color: #f1f1f1;
-    color: #121212;
+    background-color: #d8dee9;
+    color: #2e3440;
 }
 
 /* ------------------------------
@@ -82,9 +108,15 @@ h4 {
 ------------------------------ */
 .card {
     border-radius: 10px;
-    background-color: #1e1e1e;
-    border: 1px solid #2a2a2a;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background-color: #3b4252;
+    border: 1px solid #434c5e;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 .card-img-top {
@@ -93,11 +125,11 @@ h4 {
 
 .card-title {
     font-weight: 600;
-    color: #ffffff;
+    color: #eceff4;
 }
 
 .card-text {
-    color: #cccccc;
+    color: #d8dee9;
 }
 
 /* ------------------------------
@@ -107,22 +139,22 @@ h4 {
 #contactForm textarea,
 #contactForm select {
     border-radius: 6px;
-    background-color: #1b1b1b;
-    border: 1px solid #444444;
-    color: #e6e6e6;
+    background-color: #3b4252;
+    border: 1px solid #4c566a;
+    color: #eceff4;
 }
 
 #contactForm input::placeholder,
 #contactForm textarea::placeholder {
-    color: #888888;
+    color: #81a1c1;
 }
 
 #contactForm input:focus,
 #contactForm textarea:focus,
 #contactForm select:focus {
-    border-color: #0d6efd;
+    border-color: #88c0d0;
     outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    box-shadow: 0 0 0 0.18rem rgba(136, 192, 208, 0.25);
 }
 
 #formStatus {
@@ -138,11 +170,13 @@ h4 {
    Links
 ------------------------------ */
 a {
-    color: #74b9ff;
+    color: #88c0d0;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #a3d5ff;
+    color: #8fbcbb;
+    text-decoration: underline;
 }
 
 /* ------------------------------
@@ -150,5 +184,7 @@ a:hover {
 ------------------------------ */
 footer {
     margin-top: 3rem;
-    border-top: 1px solid #2a2a2a;
+    border-top: 1px solid #2e3440;
+    background-color: #151821;
+    color: #d8dee9;
 }

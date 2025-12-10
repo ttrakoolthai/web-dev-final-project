@@ -1,5 +1,3 @@
-// js/main.js
-
 // Set the year in the footer on every page
 const setYear = () => {
     const yearSpan = document.querySelector("#year");
@@ -39,14 +37,14 @@ const initContactForm = () => {
 
         // NAME VALIDATION
         if (!nameInput.value.trim()) {
-            // show error message
+            // Error message
             nameError.classList.remove("d-none");
             hasError = true;
         } else {
             nameError.classList.add("d-none");
         }
 
-        // EMAIL VALIDATION (very simple)
+        // EMAIL VALIDATION
         const emailValue = emailInput.value.trim();
         if (
             !emailValue ||
@@ -67,14 +65,14 @@ const initContactForm = () => {
             messageError.classList.add("d-none");
         }
 
-        // If there were any errors, show a general message
+        // General error messages for any detected errors
         if (hasError) {
             status.textContent = "Please fix the errors above and try again.";
             status.style.color = "red";
             return;
         }
 
-        // If all fields are valid, simulate a successful submit
+        // Successful submit
         form.reset();
         status.textContent = "Thanks! Your message has been submitted.";
         status.style.color = "green";

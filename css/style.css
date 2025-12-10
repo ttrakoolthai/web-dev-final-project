@@ -40,7 +40,7 @@ h4 {
 }
 
 /* ------------------------------
-   Navbar
+   Navbar (Nord Dark)
 ------------------------------ */
 .navbar-dark.bg-dark {
     background-color: #151821 !important;
@@ -79,7 +79,7 @@ h4 {
 }
 
 /* ------------------------------
-   Buttons
+   Buttons (Nord Frost)
 ------------------------------ */
 .btn-primary {
     background-color: #5e81ac;
@@ -177,6 +177,67 @@ a {
 a:hover {
     color: #8fbcbb;
     text-decoration: underline;
+}
+
+/* ------------------------------
+   Horizontal Rules
+------------------------------ */
+hr {
+    border-color: #434c5e;
+}
+
+/* ------------------------------
+   Accordion (Experience Page)
+------------------------------ */
+.accordion {
+    background-color: transparent;
+}
+
+.accordion-item {
+    background-color: #3b4252;
+    border: 1px solid #434c5e;
+}
+
+.accordion-button {
+    background-color: #3b4252;
+    color: #eceff4;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #4c566a;
+    color: #eceff4;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-body {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+/* ------------------------------
+   Carousel
+------------------------------ */
+/* Carousel inside project cards */
+.card-carousel-img {
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#projectsCarousel .carousel-caption,
+.card .carousel-caption {
+    background: rgba(46, 52, 64, 0.75);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+}
+
+.card .carousel-control-prev-icon,
+.card .carousel-control-next-icon {
+    filter: invert(1);
 }
 
 /* ------------------------------

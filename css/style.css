@@ -1,0 +1,106 @@
+/* ------------------------------
+   Global Typography & Layout
+------------------------------ */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+main {
+    min-height: 70vh; /* ensures footer stays at bottom */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+
+/* ------------------------------
+   Navbar Customizations
+------------------------------ */
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    margin-left: 0.5rem;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+}
+
+/* ------------------------------
+   Profile Image on Index Page
+------------------------------ */
+.profile-photo {
+    max-width: 220px;
+    border-radius: 50%;
+    border: 4px solid #ddd;
+}
+
+/* ------------------------------
+   Buttons
+------------------------------ */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #003f82;
+    border-color: #003f82;
+}
+
+/* ------------------------------
+   Project Cards
+------------------------------ */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* ------------------------------
+   Contact Form Styles
+------------------------------ */
+#contactForm input,
+#contactForm textarea,
+#contactForm select {
+    border-radius: 6px;
+}
+
+#formStatus {
+    font-weight: 600;
+}
+
+/* Error message visibility helper (used by JS) */
+.d-none {
+    display: none;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+    margin-top: 3rem;
+}

@@ -19,15 +19,20 @@
         <!-- Multi-Page Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Tommy Trakoolthai</a>
+                <!-- Brand is NOT a link on the home page -->
+                <span class="navbar-brand">Tommy Trakoolthai</span>
 
+                <!-- Accessible Navbar Toggler -->
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -78,14 +83,20 @@
                             <strong>tennis</strong>, and <strong>cats</strong>.
                         </p>
 
-                        <a href="work.html" class="btn btn-primary me-2"
-                            >View Experience</a
+                        <!-- Accessible high-contrast buttons -->
+                        <a
+                            href="work.html"
+                            class="btn btn-primary-accessible me-2"
                         >
+                            View Experience
+                        </a>
+
                         <a
                             href="projects.html"
-                            class="btn btn-outline-secondary"
-                            >View Projects</a
+                            class="btn btn-secondary-accessible"
                         >
+                            View Projects
+                        </a>
                     </div>
                 </div>
             </section>

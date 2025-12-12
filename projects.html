@@ -15,19 +15,24 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
-    <body>
+    <body id="top">
         <!-- Multi-Page Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Tommy Trakoolthai</a>
+                <!-- Avoid redundant link to index.html on this page -->
+                <a class="navbar-brand" href="#top">Tommy Trakoolthai</a>
 
+                <!-- Accessible Navbar Toggler -->
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -95,6 +100,7 @@
                                     type="button"
                                     data-bs-target="#carouselLotka"
                                     data-bs-slide="prev"
+                                    aria-label="Previous slide"
                                 >
                                     <span
                                         class="carousel-control-prev-icon"
@@ -110,6 +116,7 @@
                                     type="button"
                                     data-bs-target="#carouselLotka"
                                     data-bs-slide="next"
+                                    aria-label="Next slide"
                                 >
                                     <span
                                         class="carousel-control-next-icon"
@@ -141,9 +148,10 @@
                                 <div class="mt-auto">
                                     <a
                                         href="https://github.com/ttrakoolthai"
-                                        class="btn btn-primary btn-sm"
+                                        class="btn btn-primary-accessible btn-sm"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="View Lotka–Volterra project on GitHub"
                                     >
                                         View on GitHub
                                     </a>
@@ -183,6 +191,7 @@
                                     type="button"
                                     data-bs-target="#carouselOrbits"
                                     data-bs-slide="prev"
+                                    aria-label="Previous slide"
                                 >
                                     <span
                                         class="carousel-control-prev-icon"
@@ -198,6 +207,7 @@
                                     type="button"
                                     data-bs-target="#carouselOrbits"
                                     data-bs-slide="next"
+                                    aria-label="Next slide"
                                 >
                                     <span
                                         class="carousel-control-next-icon"
@@ -226,10 +236,11 @@
                                 </p>
                                 <div class="mt-auto">
                                     <a
-                                        href="https://github.com/ttrakoolthai"
-                                        class="btn btn-primary btn-sm"
+                                        href="https://github.com/ttrakoolthai/"
+                                        class="btn btn-primary-accessible btn-sm"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="View orbit distance project on GitHub"
                                     >
                                         View on GitHub
                                     </a>
